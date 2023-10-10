@@ -1,6 +1,5 @@
 # Use the official Tomcat image as the base image
-FROM tomcat:10.1.13-jdk17-openjdk-slim
-
+FROM tomcat:10-jdk17-openjdk-slim
 # Remove the default ROOT and examples webapps
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 RUN rm -rf /usr/local/tomcat/webapps/examples
