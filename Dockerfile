@@ -5,10 +5,7 @@ RUN rm -rf /usr/local/tomcat/webapps/ROOT
 RUN rm -rf /usr/local/tomcat/webapps/examples
 
 # Copy your application WAR file into the webapps directory
-COPY cart.war /usr/local/tomcat/webapps/
-COPY download.war /usr/local/tomcat/webapps/
-COPY email.war /usr/local/tomcat/webapps/
-COPY survey.war /usr/local/tomcat/webapps/
+COPY ROOT.war /usr/local/tomcat/webapps/
 
 # Optionally, if your application requires additional configurations or files,
 # you can copy them into the container. For example:
